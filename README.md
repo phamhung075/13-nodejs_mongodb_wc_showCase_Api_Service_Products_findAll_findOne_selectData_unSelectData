@@ -14,11 +14,9 @@ The API offers the following endpoints:
 
 - **GET `/products`**: Retrieve all products.
   - Endpoint: `GET http://localhost:3052/products`
-  - Example: Refer to [postman - get all product.md](./postman%20-%20get%20all%20product.md)
 
 - **GET `/products/:id`**: Retrieve a single product by ID.
   - Endpoint: `GET http://localhost:3052/products/:id`
-  - Example: See [postman - get product.md](./postman%20-%20get%20product.md)
 
 - **Select/Unselect Data**: Customize which data fields to return.
   - Usage details are included in the codebase.
