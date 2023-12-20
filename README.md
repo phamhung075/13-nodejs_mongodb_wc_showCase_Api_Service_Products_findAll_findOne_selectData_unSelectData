@@ -5,7 +5,7 @@ This is a Node.js API service utilizing MongoDB for showcasing products. It incl
 
 ## Installation
 To set up this project, please follow these steps:
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone https://github.com/phamhung075/13-nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData.git`
 2. Change to the project directory: `cd nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData`
 3. Install necessary dependencies: `npm install`
 
