@@ -32,6 +32,3 @@ We welcome contributions. To contribute, please:
 4. Push to the branch and submit a pull request.
    
 For more detailed examples, refer to see [README.png](./README.png).
-
-## License
-This project is available under the [MIT License](LICENSE.md).
