@@ -102,4 +102,4 @@ Content-Type: application/json
 x-api-key: [API_KEY]
 ```
 
-For more detailed examples, refer to see [README.png](./help13.png).
+For more detailed examples, refer to see [README.png](./README.png).
