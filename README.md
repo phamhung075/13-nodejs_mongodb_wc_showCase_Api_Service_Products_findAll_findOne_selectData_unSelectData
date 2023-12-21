@@ -1,34 +1,105 @@
-# nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData
+# Node.js MongoDB Showcase Projects
 
-## Description
-This is a Node.js API service utilizing MongoDB for showcasing products. It includes functionality to find all products, find a specific product, and select or unselect certain data fields.
 
-## Installation
-To set up this project, please follow these steps:
-1. Clone the repository: `git clone https://github.com/phamhung075/13-nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData.git`
-2. Change to the project directory: `cd nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData`
-3. Install necessary dependencies: `npm install`
+This is a personal project series based on the lessons by @anonystick ([https://github.com/anonystick](https://github.com/anonystick)).
+## 1. [Authentication and API Key Management (HS256)](https://github.com/phamhung075/2-nodejs_mongodb_wc_showCase_Dynamic_for_ApiKey_and_Permissions_HS256/tree/master)
 
-## Usage
-The API offers the following endpoints:
+## 2. [ErrorHandler ApiResponse](https://github.com/phamhung075/3-nodejs_mongodb_wc_showCase_ErrorHandler_API)
 
-- **GET `/products`**: Retrieve all products.
-  - Endpoint: `GET http://localhost:3052/products`
+## 3. [Success Handler ApiResponse](https://github.com/phamhung075/4-nodejs_mongodb_wc_showCase_ApiResponseUseClass/tree/master?tab=readme-ov-file)
 
-- **GET `/products/:id`**: Retrieve a single product by ID.
-  - Endpoint: `GET http://localhost:3052/products/:id`
+## 4. [SignUp and Login Public Access](https://github.com/phamhung075/5-nodejs_mongodb_wc_showCase_SignUpLogin)
 
-- **Select/Unselect Data**: Customize which data fields to return.
-  - Usage details are included in the codebase.
+## 5. [Logout Authentication](https://github.com/phamhung075/6-nodejs_mongodb_wc_showCase_LogoutAuthentication)
+## 6. [Refresh Token and Token Verification](https://github.com/phamhung075/7-nodejs_mongodb_wc_showCase_RefreshToken_verifyToken)
+## 7. [Schema for Products in E-commerce](https://github.com/phamhung075/8-nodejs_mongodb_wc_showCase_Schema_Products_Ecommerce)
+## 8. [API for Products Using Factory Pattern](https://github.com/phamhung075/11-nodejs_mongodb_wc_showCase_Api_Service_use_Factory_Pattern_Products_Senior_lv)
 
-## MongoDB Connection
-Connect to the MongoDB server using: `mongodb://localhost:27017`
+## 9. [API Service for Product Draft, Publish, and Unpublish](https://github.com/phamhung075/12-nodejs_mongodb_wc_showCase_Api_Service_Products_isDraft_isPublish_unPublish)
+## 10. API Service for Product Data Retrieval
 
-## Contributing
-We welcome contributions. To contribute, please:
-1. Fork the repository.
-2. Create a new feature branch.
-3. Commit your changes.
-4. Push to the branch and submit a pull request.
-   
-For more detailed examples, refer to see [README.png](./README.png).
+### Introduction
+
+`13-nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData` is a Node.js application designed to showcase advanced data retrieval techniques for products in a MongoDB database. This project focuses on implementing various methods to find and select product data, providing flexibility in how data is queried and presented.
+
+### Installation
+
+- Clone the repository:
+
+    `git clone https://github.com/phamhung075/13-nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData.git`
+    
+- Change to the directory:
+
+    `cd 13-nodejs_mongodb_wc_showCase_Api_Service_Products_findAll_findOne_selectData_unSelectData`
+    
+- Install dependencies:
+ 
+    `npm install`
+    
+
+### Features
+
+- **Product Service** (`./services/product.service.js`): Implements methods for finding all products, finding a single product, and selectively including or excluding data fields.
+- **Product Repository** (`./repositories/product.repo.js`): Manages database interactions for product queries.
+- **Product Controller** (`./controllers/product.controller.js`): Handles API requests for product data retrieval, leveraging service and repository layers.
+- **Utilities** (`./utils/utils.js`): Provides utility functions to support data retrieval operations.
+
+### Usage
+
+- Demonstrates various ways to retrieve product data, including finding all products, finding specific products, and customizing the selection of data fields. This function can call by user not registered
+- Offers a modular and efficient approach to handling product queries in a web application.
+
+### MongoDB Connection
+
+- Connect to MongoDB using: `mongodb://localhost:27017/yourDatabase`
+
+### Postman Examples
+
+- **Get All Products**:
+    - POSTMAN request details for fetching all products.
+- **Get Specific Product**:
+    - POSTMAN request details for fetching a specific product.
+
+### Additional Notes
+
+- This project is an excellent resource for developers looking to implement advanced query capabilities in MongoDB-based applications.
+- The approaches used can be adapted or extended to suit different types of data retrieval requirements in web applications.
+
+### Postman Examples
+
+- **Signup**, **Login**, **Logout** examples as in the previous project.
+- **Token Refresh** examples as in the previous project.
+- **Create Product** examples as in the previous project.
+- **Publish Product** examples as in the previous project.
+- **UnPublish Product** examples as in the previous project.
+- **get all Draft Products** examples as in the previous project.
+- **get all Published Products** examples as in the previous project.
+- **Find Product** examples
+``` 
+@url_dev=http://localhost:3052/v1/api/product/
+
+### Find Product
+GET {{url_dev}}/[PRODUCT_ID]
+Content-Type: application/json
+x-api-key: [API_KEY]
+```
+- **Find All Products** examples
+``` 
+@url_dev=http://localhost:3052/v1/api/product/
+
+### Find All Products
+GET {{url_dev}}
+Content-Type: application/json
+x-api-key: [API_KEY]
+```
+- **Search Products by name** examples
+``` 
+@url_dev=http://localhost:3052/v1/api/product/
+
+### Search Products by name
+GET {{url_dev}}/search/[keysearch]
+Content-Type: application/json
+x-api-key: [API_KEY]
+```
+
+For more detailed examples, refer to see [README.png](./help12.png).
